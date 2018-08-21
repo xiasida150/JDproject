@@ -1,0 +1,76 @@
+html,body,div,h1,h2,h3,h4,h5,h6,hr,p,blockquote,
+dl,dt,dd,ul,ol,li,pre,form,fieldset,object,code,
+em,span,var,legend,button,input,textarea,th,td,
+a,img,header,footer,nav,aside,audio,datalist,section
+{
+    margin:0;
+    padding:0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}/*清除内外边距*/
+
+body{
+    font-size: 14px;
+    /*
+    设置显示字体微软雅黑，如果没有就启用移动端的默认字体显示
+    */
+    font-family: "Microsoft YaHei",sans-serif ;
+    color: #333333;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+input , textarea {
+    border: none;
+    outline:none;
+    /* resize 设置textarea文本域右下角的用于拉伸选项*/
+    resize:none;
+    /* 设置输入框元素的外观，取消所有样式，外观由自己定制*/
+    -webkit-appearance:none;
+}
+
+
+.clearFix::before,
+.clearFix::after{
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+    clear: both;
+}
+
+.f_left{
+    float: left;
+}
+
+.f_right{
+    float: right;
+}
+
+.m_r10{
+    margin-right: 10px;
+}
+.m_l10{
+    margin-left: 10px;
+}
+.m_t10{
+    margin-top: 10px;
+}
+.m_b10{
+    margin-bottom: 10px;
+}
+/*雪碧图公用引用*/
+[class^='jd_icon_'],[class*=' jd_icon_'] {
+    background-image: url('../images/sprites.png');
+    background-repeat: no-repeat;
+    background-size:200px 200px;
+}

@@ -1,0 +1,148 @@
+html,body{
+    height: 100%
+}
+
+.cy_box{
+    width: 100%;
+    height: 100%;
+}
+
+.cy_head_search{
+    width: 100%;
+    height: 45px;
+    border-bottom: solid 1px #cccccc;
+    background:-webkit-linear-gradient(top,#fefefe,#efefef);
+    background:linear-gradient(top,#fefefe,#efefef);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.cy_head_search form{
+    width: 100%;
+    padding: 7px 40px;
+}
+.cy_head_search form input{
+    display: block;
+    width: 100%;
+    height: 30px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    padding: 0 10px;
+    border: solid 1px #ddd;
+}
+
+.cy_head_search a{
+    display: block;
+    width: 40px;
+    height: 44px;
+    padding: 12px 10px;
+    position: absolute;
+    top: 0;
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
+
+    -webkit-background-origin: content-box;
+    background-origin: content-box;
+}
+
+.cy_head_search a.jd_icon_back{
+    left: 0;
+    background-position: -20px 0;
+}
+.cy_head_search a.jd_icon_menu{
+    right: 0;
+    background-position: -60px 0;
+}
+
+/*内容界面*/
+.cy_main{
+    height: 100%;
+    width: 100%;
+    padding-top: 45px;
+}
+
+.cy_main .cy_main_left{
+    height: 100%;
+    width: 90px;
+    float: left;
+    overflow: hidden;
+}
+
+.cy_main .cy_main_left ul{
+    width: 90px;
+}
+.cy_main .cy_main_left li{
+    width: 90px;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: solid 1px #ddd;
+    border-right: solid 1px #ddd;
+    text-align: center;
+    background: #f3f4f5;
+    font-size: 14px;
+}
+.cy_main .cy_main_left li.now{
+    background: #fff;
+    border-right: none;
+}
+
+.cy_main .cy_main_left li a{
+    display: block;
+    width: 100%;
+}
+.cy_main .cy_main_left li.now a{
+    color: #d8505c;
+}
+
+/*左边主题内容*/
+.cy_main_right {
+    height: 100%;
+    overflow: hidden;
+}
+.cy_main_right .cyRight_box{
+    width: 100%;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.cy_main_right .cyRight_box .cy_banner{
+    display: block;
+    width: 100%;
+}
+.cy_main_right .cyRight_box .cy_banner img{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+.cy_main_right .cyRight_box .hot{
+    margin-top: 10px;
+}
+.cy_main_right .cyRight_box .hot h3{
+    font-size: 12px;
+}
+.cy_main_right .cyRight_box .hot ul {
+    width: 100%;
+}
+.cy_main_right .cyRight_box .hot ul li{
+    width: 33.3333%;
+    float: left;
+    padding: 4px 0;
+}
+.cy_main_right .cyRight_box .hot ul li a {
+    display: block;
+    width: 100%;
+}
+.cy_main_right .cyRight_box .hot ul li a img{
+    width: 62px;
+    height: 62px;
+    display: block;
+    margin: 0 auto;
+}
+
+.cy_main_right .cyRight_box .hot ul li p{
+    text-align: center;
+    font-size: 12px;
+}
